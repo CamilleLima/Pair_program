@@ -1,0 +1,68 @@
+/* Reset CSS para limpar estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 600px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  ul li {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* Adapte a página para dispositivos móveis */
+    h1 {
+      font-size: 24px;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    ul {
+      max-width: 100%;
+    }
+  }
+  
