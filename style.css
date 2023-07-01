@@ -30,10 +30,10 @@
     width: 600px;
     border: none;
     border-radius: 20px;
-    background-color: #f8f8f8;
+    background-color: #E6E6FA;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 16px;
-    color: #333;
+    color: #fdf1f1;
   }
   
   ul {
@@ -50,6 +50,30 @@
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+  div {
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url("");
+    height: 400px;
+    width: 100%;
+ }
+ html, body {
+  height: 100%;
+  margin: 0;
+}
+
+ footer{
+  
+    background-color: #E6E6FA;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px 20px 30px;
+  }
+
+ 
   
   @media screen and (max-width: 600px) {
     /* Adapte a página para dispositivos móveis */
