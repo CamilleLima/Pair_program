@@ -13,4 +13,18 @@
   "devDependencies": {
     "nodemon": "^2.0.22"
   }
+
+  {
+    "name": "Pair_program",
+    "version": "1.0.0",
+    "scripts": {
+      "api": "nodemon api/index.js"
+    },
+    "dependencies": {
+    "nodemon": "^2.0.22"
+    }
+  }
+  
+
+
 }
