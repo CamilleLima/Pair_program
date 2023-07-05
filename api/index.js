@@ -1,5 +1,6 @@
-const http =require ('http')
+const http = require ('http')
 
 http.createServer((req, res) => {
+
 
 }).listen(3000, () => console.log('API rodando.....'))
