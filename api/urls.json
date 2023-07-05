@@ -1,13 +1,8 @@
 {
-
-"urls":[
+  "urls": [
     {
-
-"nome":"Webacademy",
-"url": "http://webacademy.ufac.br"
-
-}
-
-]
-
+      "nome": "Webacademy",
+      "url": "http://webacademy.ufac.br"
+    }
+  ]
 }
