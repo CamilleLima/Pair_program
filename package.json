@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "api": "nodemon api/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,18 +14,4 @@
   "devDependencies": {
     "nodemon": "^2.0.22"
   }
-
-  {
-    "name": "Pair_program",
-    "version": "1.0.0",
-    "scripts": {
-      "api": "nodemon api/index.js"
-    },
-    "dependencies": {
-    "nodemon": "^2.0.22"
-    }
-  }
-  
-
-
 }

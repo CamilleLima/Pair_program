@@ -1,13 +1,16 @@
 {
-
-"urls":[
+  "urls": [
     {
-
-"nome":"Webacademy",
-"url": "http://webacademy.ufac.br"
-
-}
-
-]
-
+      "name": "Web Academy",
+      "url": "http://webacademy.ufac.br"
+    },
+    {
+      "name": "Web Academy2",
+      "url": "http://webacademy.ufac.br"
+    },
+    {
+      "name": "Web Academy3",
+      "url": "http://webacademy.ufac.br"
+    }
+  ]
 }

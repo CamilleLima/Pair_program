@@ -2,7 +2,7 @@ const ul = document.querySelector('ul')
 const input = document.querySelector('input')
 const form = document.querySelector('form')
 
-/*
+
 
 // Não se preocupem com esse pedaço de código comentado! Vamos descomentá-lo quando tivermos acabado de construir a API.
 
@@ -16,7 +16,7 @@ async function load() {
 }
 
 load()
-*/
+
 
 function addElement({ name, url }) {
     const li = document.createElement('li')
