@@ -9,8 +9,7 @@ http.createServer((req, res) => {
     const { name, url, del } = URL.parse(req.url, true).query
 
 res.writeHead(200, {
-
-    'Acess-control-allow-origin':'*'
+    'Access-control-allow-origin':'*'
 })
 
 
@@ -31,6 +30,7 @@ res.writeHead(200, {
     if(del){
         data.urls = data.urls.filter(item => item.url != url)
         return writeFile(message => res.end(message))
+
     }
     
     data.urls.push({name,url})

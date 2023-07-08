@@ -18,6 +18,7 @@ async function load() {
 load()
 
 
+
 function addElement({ name, url }) {
     const li = document.createElement('li')
     const a = document.createElement("a")
@@ -34,6 +35,16 @@ function addElement({ name, url }) {
     li.append(a)
     li.append(trash)
     
+}
+
+async function addElementapi({name, url}){
+    addElement({name, url})
+    const response = await fetch(`http://localhost:3000/?name=${name}&url=${url}`)
+    console.log(response)
+    if (!response.ok){
+        console.error(`Erro ao enviar os dados para a API!: ${response.statusText}`)
+        
+    }
 }
 
 function removeElement(element) {
@@ -58,7 +69,7 @@ form.addEventListener('submit', (event) => {
     if (!/^http/.test(url))
         return alert('Digite a url da maneira correta.')
 
-    addElement({ name, url })
+    addElementapi({ name, url })
 
     input.value = ''
 
