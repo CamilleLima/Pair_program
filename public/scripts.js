@@ -1,6 +1,7 @@
 const ul = document.querySelector('ul')
 const input = document.querySelector('input')
 const form = document.querySelector('form')
+const li = document.querySelector('li')
 
 
 
@@ -29,7 +30,7 @@ function addElement({ name, url }) {
     a.target = "_blank"
 
     trash.innerHTML = "x"
-    trash.onclick = () => removeElement(trash)
+    trash.onclick = () => removeElement(li)
     
     ul.append(li)
     li.append(a)
@@ -47,10 +48,18 @@ async function addElementapi({name, url}){
     }
 }
 
+// function updateElement({name}){
+//     updateElement({name})
+// }
+
 function removeElement(element) {
-    if (confirm('Tem certeza que deseja deletar?'))
-        element.parentNode.remove()
-}
+    if (confirm('Tem certeza que deseja deletar?')) {
+      element.remove(); // Removendo o elemento li diretamente
+      console.log('Removido com sucesso');
+    }
+  }
+        
+
 
 form.addEventListener('submit', (event) => {
     
@@ -70,7 +79,9 @@ form.addEventListener('submit', (event) => {
         return alert('Digite a url da maneira correta.')
 
     addElementapi({ name, url })
-
     input.value = ''
+
+    removeElement({li})
+    
 
 })
